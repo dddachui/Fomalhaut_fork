@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>2023学习目标</title>
+      <link href="/posts/7169e9ad.html"/>
+      <url>/posts/7169e9ad.html</url>
+      
+        <content type="html"><![CDATA[<h1>学习Flag</h1><ol><li>考完驾照！</li><li>学习rpm打包方法</li><li>学习ks文件使用，包括文件编写、pxe自动安装、封装镜像</li><li>rub原理学习(修复legacy、uefi引导、基本操作)</li><li>linux双网卡使用NetworkManager服务访问资源问题解决</li><li>高并发文档精简</li></ol><h1>人生目标</h1><ol><li>找个对象</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Markdown语法与外挂标签写法汇总</title>
       <link href="/posts/2013454d.html"/>
       <url>/posts/2013454d.html</url>
