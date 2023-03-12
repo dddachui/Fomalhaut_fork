@@ -6,7 +6,7 @@
   <link href="https://www.fomal.cc/atom.xml" rel="self"/>
   
   <link href="https://www.fomal.cc/"/>
-  <updated>2023-03-12T14:43:04.228Z</updated>
+  <updated>2023-03-12T14:46:24.054Z</updated>
   <id>https://www.fomal.cc/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.fomal.cc/posts/7169e9ad.html"/>
     <id>https://www.fomal.cc/posts/7169e9ad.html</id>
     <published>2023-03-12T14:15:32.000Z</published>
-    <updated>2023-03-12T14:43:04.228Z</updated>
+    <updated>2023-03-12T14:46:24.054Z</updated>
     
     <content type="html"><![CDATA[<h1>学习Flag</h1><ol><li>考完驾照！</li><li>学习rpm打包方法</li><li>学习ks文件使用，包括文件编写、pxe自动安装、封装镜像</li><li>rub原理学习(修复legacy、uefi引导、基本操作)</li><li>linux双网卡使用NetworkManager服务访问资源问题解决</li><li>高并发文档精简</li></ol><h1>人生目标</h1><ol><li>找个对象</li></ol>]]></content>
     
