@@ -1119,8 +1119,8 @@ function createtime1() {
   var dnum = Math.floor(days);
 
   var ascll = [
-    `欢迎来到Fomalhaut🥝の小家!`,
-    `Future is now 🍭🍭🍭`,
+    `欢迎来到大锤小家!`,
+    `大锤80，小锤60`,
     `
         
 ███████  ██████  ███    ███  █████  ██      ██   ██  █████  ██    ██ ████████ 
@@ -1172,7 +1172,7 @@ function createtime2() {
   setTimeout(
     console.warn.bind(
       console,
-      "%c ⚡ Powered by Fomalhaut🥝 %c 你正在访问Fomalhaut🥝の小家",
+      "%c ⚡ Powered by dachui %c 你正在访问dachuiの小家",
       "color:white; background-color:#f0ad4e",
       ""
     )
