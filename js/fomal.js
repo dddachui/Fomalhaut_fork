@@ -3173,11 +3173,12 @@ let unsplash = "url(https://source.unsplash.com/random/1920x1080/)";
 if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
+//背景图
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/dm14.webp);
-    --darkmode-bg:url(https://lskypro.acozycotage.net/Fomalhaut/img/yuanshen1.webp);
-    --mobileday-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/snow.webp);
-    --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
+    --default-bg: url(https://cdn1.tianli0.top/gh/dddachui/picture_bed/img/9.png);
+    --darkmode-bg:url(https://cdn1.tianli0.top/gh/dddachui/picture_bed/img/19.png);
+    --mobileday-bg: url(https://cdn1.tianli0.top/gh/dddachui/picture_bed/img/29.png);
+    --mobilenight-bg: url(https://cdn1.tianli0.top/gh/dddachui/picture_bed/img/39.png);
   }`;
 }
 // 切换背景主函数
