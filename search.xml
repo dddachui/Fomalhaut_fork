@@ -13,14 +13,14 @@
       
       <categories>
           
-          <category> 软件 </category>
+          <category> 分享 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 软件 </tag>
+            <tag> 分享 </tag>
             
         </tags>
       
@@ -61,10 +61,16 @@
         <content type="html"><![CDATA[<h1>学习Flag</h1><ol><li>考完驾照！</li><li>学习rpm打包方法</li><li>学习ks文件使用，包括文件编写、pxe自动安装、封装镜像</li><li>rub原理学习(修复legacy、uefi引导、基本操作)</li><li>linux双网卡使用NetworkManager服务访问资源问题解决</li><li>高并发文档精简</li></ol><h1>人生目标</h1><ol><li>找个对象</li></ol>]]></content>
       
       
+      <categories>
+          
+          <category> 分享 </category>
+          
+      </categories>
+      
       
         <tags>
             
-            <tag> Markdown </tag>
+            <tag> 目标 </tag>
             
         </tags>
       
@@ -307,14 +313,14 @@
       
       <categories>
           
-          <category> 知识点 </category>
+          <category> 解压缩 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 知识点 </tag>
+            <tag> 解压缩 </tag>
             
         </tags>
       
@@ -482,14 +488,14 @@
       
       <categories>
           
-          <category> 知识点 </category>
+          <category> 分享 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 知识点 </tag>
+            <tag> 防止误删 </tag>
             
         </tags>
       
@@ -507,14 +513,14 @@
       
       <categories>
           
-          <category> centos </category>
+          <category> 知识点 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 知识点 </tag>
+            <tag> 引导 </tag>
             
         </tags>
       
@@ -557,14 +563,14 @@
       
       <categories>
           
-          <category> 软raid </category>
+          <category> 软件安装 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 软件安装 </tag>
+            <tag> 软raid </tag>
             
         </tags>
       
@@ -657,14 +663,14 @@
       
       <categories>
           
-          <category> 系统调优 </category>
+          <category> 知识点 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 知识点 </tag>
+            <tag> 系统调优 </tag>
             
         </tags>
       
@@ -707,14 +713,14 @@
       
       <categories>
           
-          <category> 博客搭建 </category>
+          <category> 软件安装 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 软件安装 </tag>
+            <tag> 博客搭建 </tag>
             
         </tags>
       
@@ -732,14 +738,14 @@
       
       <categories>
           
-          <category> 包管理器 </category>
+          <category> centos </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 知识点 </tag>
+            <tag> 包管理器 </tag>
             
         </tags>
       
@@ -782,14 +788,14 @@
       
       <categories>
           
-          <category> 开源软件 </category>
+          <category> 软件安装 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 软件安装 </tag>
+            <tag> 开源软件 </tag>
             
         </tags>
       
@@ -832,14 +838,14 @@
       
       <categories>
           
-          <category> 源码安装步骤 </category>
+          <category> 软件安装 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 软件安装 </tag>
+            <tag> 源码安装步骤 </tag>
             
         </tags>
       
@@ -1014,7 +1020,7 @@
       
         <tags>
             
-            <tag> 知识点 </tag>
+            <tag> fcitx输入法 </tag>
             
         </tags>
       
@@ -1114,7 +1120,7 @@
       
         <tags>
             
-            <tag> 知识点 </tag>
+            <tag> 逻辑卷 </tag>
             
         </tags>
       
@@ -1157,14 +1163,14 @@
       
       <categories>
           
-          <category> centos </category>
+          <category> 基础知识 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 知识点 </tag>
+            <tag> 基础知识 </tag>
             
         </tags>
       
@@ -1307,14 +1313,14 @@
       
       <categories>
           
-          <category> 环境变量 </category>
+          <category> 知识点 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 知识点 </tag>
+            <tag> 环境变量 </tag>
             
         </tags>
       
@@ -1407,7 +1413,7 @@
       
       <categories>
           
-          <category> centos </category>
+          <category> 防火墙 </category>
           
       </categories>
       
@@ -1439,7 +1445,7 @@
       
         <tags>
             
-            <tag> 知识点 </tag>
+            <tag> swap </tag>
             
         </tags>
       
@@ -1464,7 +1470,7 @@
       
         <tags>
             
-            <tag> 知识点 </tag>
+            <tag> 磁盘测速 </tag>
             
         </tags>
       
@@ -1489,7 +1495,7 @@
       
         <tags>
             
-            <tag> 知识点 </tag>
+            <tag> fio测速 </tag>
             
         </tags>
       
@@ -1632,14 +1638,14 @@
       
       <categories>
           
-          <category> 漏洞 </category>
+          <category> 知识点 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 知识点 </tag>
+            <tag> 漏洞 </tag>
             
         </tags>
       
@@ -1707,7 +1713,7 @@
       
       <categories>
           
-          <category> 网站推荐 </category>
+          <category> 分享 </category>
           
       </categories>
       
@@ -1757,14 +1763,14 @@
       
       <categories>
           
-          <category> 显卡驱动安装 </category>
+          <category> 软件安装 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 软件安装 </tag>
+            <tag> 显卡驱动安装 </tag>
             
         </tags>
       
