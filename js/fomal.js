@@ -2805,7 +2805,7 @@ function createtime() {
   (currentTimeHtml =
     hnum < 18 && hnum >= 9
       ? `<img class='boardsign' src='https://cdn1.tianli0.top/gh/dddachui/picture_bed/img/dachui-贷款上班中-06ff3.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 80 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
-      : `<img class='boardsign' src='https://cdn1.tianli0.top/gh/dddachui/picture_bed/img/dachui-想要恋爱-13ds3.svg' title='只有我下班之后继续上班吗~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 80 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
+      : `<img class='boardsign' src='https://github.com/dddachui/picture_bed/blob/master/img/dachui-%E6%83%B3%E8%A6%81%E6%81%8B%E7%88%B1-13ds3.svg' title='只有我下班之后继续上班吗~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 80 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
     document.getElementById("workboard") &&
     (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
