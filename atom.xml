@@ -6,7 +6,7 @@
   <link href="https://www.dddachui.top/atom.xml" rel="self"/>
   
   <link href="https://www.dddachui.top/"/>
-  <updated>2023-03-22T15:51:13.346Z</updated>
+  <updated>2023-03-23T11:42:07.249Z</updated>
   <id>https://www.dddachui.top/</id>
   
   <author>
@@ -21,8 +21,19 @@
     <link href="https://www.dddachui.top/posts/83891c9e.html"/>
     <id>https://www.dddachui.top/posts/83891c9e.html</id>
     <published>2023-03-22T15:51:12.000Z</published>
-    <updated>2023-03-22T15:51:13.346Z</updated>
+    <updated>2023-03-23T11:42:07.249Z</updated>
     
+    <content type="html"><![CDATA[<h1>获得一份镜像数据</h1><ul><li>挂载系统镜像</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount centos.iso /mnt</span><br></pre></td></tr></table></figure><ul><li>拷贝到系统某个目录</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir /iso</span><br><span class="line">cp -rp /mnt/*   /iso/</span><br></pre></td></tr></table></figure><h1>修改kickstart脚本</h1><ul><li>在/iso目录下创建一个文件夹来存放脚本</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir kickstart</span><br></pre></td></tr></table></figure><ul><li>将ks脚本拷贝过来</li></ul><ol><li>可以用自己写的</li><li>可以拿已经安装的/root下的cfg文件</li></ol><h1>修改引导</h1><ul><li>修改isolinux/isolinux.cfg文件</li><li>添加引导</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">cdrom</span></span><br><span class="line">label linux</span><br><span class="line">  menu label ^Install ikun system Standard(CDROM)</span><br><span class="line">  kernel vmlinuz</span><br><span class="line">  append initrd=initrd.img vga=0x314 lang=zh_CN ks=cdrom:/kickstart/test.cfg</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">usb</span></span><br><span class="line">label linux</span><br><span class="line">  menu label ^Install ikun system Standard(USB)</span><br><span class="line">  kernel vmlinuz</span><br><span class="line">  append initrd=initrd.img vga=0x314 lang=zh_CN ks=hd:LABEL=Centos:/kickstart/test.cfg</span><br></pre></td></tr></table></figure><h1>封装镜像</h1><ul><li>封装</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">genisoimage -v -cache-inodes -joliet-long -R -J -T -V Centos  -o /opt/Centos-sp1.iso -c isolinux/boot.cat -b isolinux/isolinux.bin -no-emul-boot -boot-load-size 4 -boot-info-table -eltorito-alt-boot -b images/efiboot.img -no-emul-boot  /iso/  </span><br></pre></td></tr></table></figure><ul><li>校验</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">implantisomd5   /opt/Centos-sp1.iso</span><br></pre></td></tr></table></figure><h1>测试</h1><p>虚拟机安装一下， 会发现自动加载了之前的配置，这样以后不同场景可以自己裁剪镜像来定制化</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1&gt;获得一份镜像数据&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;挂载系统镜像&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;</summary>
+      
     
     
     
