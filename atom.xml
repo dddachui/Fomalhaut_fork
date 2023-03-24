@@ -324,7 +324,7 @@
     <link href="https://www.dddachui.top/posts/c9c09545.html"/>
     <id>https://www.dddachui.top/posts/c9c09545.html</id>
     <published>2022-09-23T07:01:50.000Z</published>
-    <updated>2023-03-14T04:28:45.321Z</updated>
+    <updated>2023-03-24T06:51:47.447Z</updated>
     
     <content type="html"><![CDATA[<h1>pigz简介</h1><p>使用pigz，利用了多核cpu，提高了压缩速度，将我们闲置的核心利用起来！</p><h1>前提</h1><p>首先要安装一个pigz</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y pigz</span><br></pre></td></tr></table></figure><h1>pigz常用命令参数</h1><ul><li>-p: 设置最大使用线程数量，默认所有在线cpu，如果不能获取cpu数量，则取8</li><li>-b：设置压缩块大小，默认128k</li><li>-d：解压缩</li><li>-q：静默模式，不输出任何信息</li><li>-k：不删除原始文件</li><li>-l：输出压缩内容</li><li>-r：递归子目录</li><li>-S：使用sss后缀替换gz</li><li>-v：输出详细信息</li></ul><h1>多线程压缩</h1><p>–use-compress-program=pigz即代表使用的pigz工具</p><blockquote><p>加time只是用来对比时间</p></blockquote><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">time tar --use-compress-program=pigz -cvpf dxc.tar.gz  ./*</span><br></pre></td></tr></table></figure><h1>多线程解压</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">time tar --use-compress-program=pigz -xvpf dxc.tar.gz</span><br></pre></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pigz -p 8 -d output.tgz</span><br></pre></td></tr></table></figure><h1>pigz参数使用方式</h1><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar --<span class="keyword">use</span>-<span class="keyword">compress</span>-<span class="keyword">program</span>=<span class="string">&quot;pigz -k -p8&quot;</span> -cvf output.tgz   /<span class="keyword">var</span>/<span class="keyword">log</span></span><br></pre></td></tr></table></figure>]]></content>
     
@@ -333,7 +333,7 @@
     
     
     
-    <category term="解压缩" scheme="https://www.dddachui.top/categories/%E8%A7%A3%E5%8E%8B%E7%BC%A9/"/>
+    <category term="知识点" scheme="https://www.dddachui.top/categories/%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     
     
     <category term="解压缩" scheme="https://www.dddachui.top/tags/%E8%A7%A3%E5%8E%8B%E7%BC%A9/"/>

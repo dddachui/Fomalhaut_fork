@@ -6687,28 +6687,28 @@ center#name-container {
   padding: 0 0 0 8px !important;
 }
 /* 子菜单横向展示 */
-#nav .menus_items .menus_item:hover .menus_item_child {
+/* #nav .menus_items .menus_item:hover .menus_item_child {
   display: flex !important;
-}
+} */
 /* 这里的2是代表导航栏的第二个元素，即有子菜单的元素，可以按自己需求修改 */
-.menus_items .menus_item:nth-child(2) .menus_item_child {
+/* .menus_items .menus_item:nth-child(2) .menus_item_child {
   left: -95px;
-}
-.menus_items .menus_item:nth-child(3) .menus_item_child {
+} */
+/* .menus_items .menus_item:nth-child(3) .menus_item_child {
   left: -103px;
 }
 .menus_items .menus_item:nth-child(4) .menus_item_child {
   left: -102px;
-}
+} */
 .menus_items .menus_item:nth-child(5) .menus_item_child {
-  left: -117px;
+  left: -125px;
 }
-.menus_items .menus_item:nth-child(6) .menus_item_child {
+/* .menus_items .menus_item:nth-child(6) .menus_item_child {
   left: -133px;
 }
 .menus_items .menus_item:nth-child(7) .menus_item_child {
   left: -105px;
-}
+} */
 
 /*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
 /* #page-header:not(.not-top-img):before {

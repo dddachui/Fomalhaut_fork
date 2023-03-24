@@ -363,7 +363,7 @@
       
       <categories>
           
-          <category> 解压缩 </category>
+          <category> 知识点 </category>
           
       </categories>
       
@@ -538,7 +538,7 @@
       
       <categories>
           
-          <category> 分享 </category>
+          <category> 知识点 </category>
           
       </categories>
       
@@ -613,14 +613,14 @@
       
       <categories>
           
-          <category> 软件安装 </category>
+          <category> 安装部署 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 软raid </tag>
+            <tag> 安装部署 </tag>
             
         </tags>
       
@@ -763,7 +763,7 @@
       
       <categories>
           
-          <category> 软件安装 </category>
+          <category> 安装部署 </category>
           
       </categories>
       
@@ -788,7 +788,7 @@
       
       <categories>
           
-          <category> centos </category>
+          <category> 知识点 </category>
           
       </categories>
       
@@ -838,14 +838,14 @@
       
       <categories>
           
-          <category> 软件安装 </category>
+          <category> 安装部署 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 开源软件 </tag>
+            <tag> 安装部署 </tag>
             
         </tags>
       
@@ -888,14 +888,14 @@
       
       <categories>
           
-          <category> 软件安装 </category>
+          <category> 安装部署 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 源码安装步骤 </tag>
+            <tag> 安装部署 </tag>
             
         </tags>
       
@@ -1063,7 +1063,7 @@
       
       <categories>
           
-          <category> fcitx输入法 </category>
+          <category> 知识点 </category>
           
       </categories>
       
@@ -1163,7 +1163,7 @@
       
       <categories>
           
-          <category> 磁盘管理 </category>
+          <category> 知识点 </category>
           
       </categories>
       
@@ -1213,7 +1213,7 @@
       
       <categories>
           
-          <category> 基础知识 </category>
+          <category> 知识点 </category>
           
       </categories>
       
@@ -1463,7 +1463,7 @@
       
       <categories>
           
-          <category> 防火墙 </category>
+          <category> 知识点 </category>
           
       </categories>
       
@@ -1488,7 +1488,7 @@
       
       <categories>
           
-          <category> 磁盘管理 </category>
+          <category> 知识点 </category>
           
       </categories>
       
@@ -1513,7 +1513,7 @@
       
       <categories>
           
-          <category> 磁盘管理 </category>
+          <category> 知识点 </category>
           
       </categories>
       
@@ -1538,7 +1538,7 @@
       
       <categories>
           
-          <category> 磁盘管理 </category>
+          <category> 知识点 </category>
           
       </categories>
       
@@ -1738,7 +1738,7 @@
       
       <categories>
           
-          <category> centos </category>
+          <category> 知识点 </category>
           
       </categories>
       
@@ -1763,7 +1763,7 @@
       
       <categories>
           
-          <category> 分享 </category>
+          <category> 知识点 </category>
           
       </categories>
       
@@ -1813,14 +1813,14 @@
       
       <categories>
           
-          <category> 软件安装 </category>
+          <category> 安装部署 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 显卡驱动安装 </tag>
+            <tag> 安装部署 </tag>
             
         </tags>
       
