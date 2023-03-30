@@ -6,7 +6,7 @@
   <link href="https://www.dddachui.top/atom.xml" rel="self"/>
   
   <link href="https://www.dddachui.top/"/>
-  <updated>2023-03-29T14:26:19.435Z</updated>
+  <updated>2023-03-30T14:56:05.669Z</updated>
   <id>https://www.dddachui.top/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>三剑客-sed</title>
+    <link href="https://www.dddachui.top/posts/c9de9d82.html"/>
+    <id>https://www.dddachui.top/posts/c9de9d82.html</id>
+    <published>2023-03-30T14:28:45.000Z</published>
+    <updated>2023-03-30T14:56:05.669Z</updated>
+    
+    <content type="html"><![CDATA[<h1>替换</h1><p>在Linux系统中，可以使用sed命令来替换文件中的文本内容。要将所有的“kylin”替换为“ikun”，可以使用以下命令：</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sed</span> -i <span class="string">&#x27;s/kun/ikun/g&#x27;</span> filename</span><br></pre></td></tr></table></figure><p>将上面的 <code>filename</code> 替换为实际的文件名，这个命令将直接修改这个文件，将其中所有的“kylin”替换为“ikun”。</p><p>解释一下命令中的选项和参数：</p><ul><li><code>-i</code>：表示直接修改文件内容，而不是输出到终端或另一个文件中。</li><li><code>s/kun/ikun/g</code>：这是一个正则表达式，表示将“kylin”替换为“ikun”。其中，<code>s</code>表示替换操作，<code>/</code>是分隔符，<code>g</code>表示全局替换，即将每个匹配的“kun”都替换为“ikun”。</li></ul><p>请注意，在使用sed命令修改文件内容时，建议先备份原文件，以防止意外修改导致数据丢失。</p><h1>增加</h1><p>在Linux系统中，可以使用sed命令来修改GRUB引导参数，以添加 <code>net.ifnames=1 biosdevname</code> 选项。要在quiet选项后增加这个选项，可以使用以下命令：</p><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo sed -i <span class="string">&#x27;s/quiet/quiet net.ifnames=1 biosdevname/g&#x27;</span> <span class="regexp">/etc/</span><span class="keyword">default</span>/grub</span><br></pre></td></tr></table></figure><p>这个命令将修改 <code>/etc/default/grub</code> 文件，将其中的 <code>quiet</code> 选项替换为 <code>quiet net.ifnames=1 biosdevname</code>，并保存修改后的文件。</p><p>解释一下命令中的选项和参数：</p><ul><li><code>sudo</code>：表示使用管理员权限来执行命令。</li><li><code>-i</code>：表示直接修改文件内容，而不是输出到终端或另一个文件中。</li><li><code>s/quiet/quiet net.ifnames=1 biosdevname/g</code>：这是一个正则表达式，表示将 <code>quiet</code> 替换为 <code>quiet net.ifnames=1 biosdevname</code>。其中，<code>s</code>表示替换操作，<code>/</code>是分隔符，<code>g</code>表示全局替换，即将每个匹配的 <code>quiet</code> 都替换为 <code>quiet net.ifnames=1 biosdevname</code>。</li><li><code>/etc/default/grub</code>：指定要修改的GRUB配置文件的路径。</li></ul><h1>删除</h1><p>在Linux系统中，可以使用sed命令来删除文件中的特定文本行。要删除文件中的 <code>modprobe.blacklist=nouveau</code> 行，可以使用以下命令：</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sed</span> -i <span class="string">&#x27;/modprobe.blacklist=nouveau/d&#x27;</span> filename</span><br></pre></td></tr></table></figure><p>将上面的 <code>filename</code> 替换为实际的文件名，这个命令将直接修改这个文件，将其中所有包含 <code>modprobe.blacklist=nouveau</code> 的行删除。</p><p>解释一下命令中的选项和参数：</p><ul><li><code>-i</code>：表示直接修改文件内容，而不是输出到终端或另一个文件中。</li><li><code>/modprobe.blacklist=nouveau/d</code>：这是一个正则表达式，表示删除所有包含 <code>modprobe.blacklist=nouveau</code> 的行。其中，<code>/</code>是分隔符，<code>d</code>表示删除匹配的行。</li></ul><p>请注意，在使用sed命令修改文件内容时，建议先备份原文件，以防止意外修改导致数据丢失。</p>]]></content>
+    
+    
+    <summary type="html">描述</summary>
+    
+    
+    
+    <category term="分类" scheme="https://www.dddachui.top/categories/%E5%88%86%E7%B1%BB/"/>
+    
+    
+    <category term="暂存" scheme="https://www.dddachui.top/tags/%E6%9A%82%E5%AD%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux好用命令之wall</title>
+    <link href="https://www.dddachui.top/posts/c4b461e0.html"/>
+    <id>https://www.dddachui.top/posts/c4b461e0.html</id>
+    <published>2023-03-30T06:03:12.000Z</published>
+    <updated>2023-03-30T14:55:54.351Z</updated>
+    
+    <content type="html"><![CDATA[<h1>使用方式</h1><ul><li>向所有终端广播</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wall &quot;hello&quot;</span><br></pre></td></tr></table></figure><ul><li>排除邮件前面的头条文本</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wall -n &quot;hello&quot;</span><br></pre></td></tr></table></figure><ul><li>给组发信息</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wall -g <span class="built_in">test</span> <span class="string">&quot;hello&quot;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1&gt;使用方式&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;向所有终端广播&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;</summary>
+      
+    
+    
+    
+    <category term="linux命令" scheme="https://www.dddachui.top/categories/linux%E5%91%BD%E4%BB%A4/"/>
+    
+    
+    <category term="linux命令" scheme="https://www.dddachui.top/tags/linux%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>centos修改网卡名</title>
@@ -90,16 +139,16 @@
   </entry>
   
   <entry>
-    <title>Linux好用命令之expect</title>
-    <link href="https://www.dddachui.top/posts/a5a7ce3.html"/>
-    <id>https://www.dddachui.top/posts/a5a7ce3.html</id>
+    <title>Linux好用命令之ethtool</title>
+    <link href="https://www.dddachui.top/posts/c0d4357c.html"/>
+    <id>https://www.dddachui.top/posts/c0d4357c.html</id>
     <published>2023-03-26T15:30:51.000Z</published>
-    <updated>2023-03-26T10:40:20.644Z</updated>
+    <updated>2023-03-27T02:21:37.754Z</updated>
     
-    <content type="html"><![CDATA[<h1>作用</h1><p>交互式自动输入</p><h1>安装</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y expect</span><br></pre></td></tr></table></figure><h1>简单示例</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cat expect.sh </span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/usr/bin/expec</span></span><br><span class="line">set timeout 20</span><br><span class="line">spawn ssh root@10.20.24.103</span><br><span class="line">expect &quot;root&quot;</span><br><span class="line">send &quot;paic1234\n&quot;</span><br><span class="line">interact</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h1>命令简介</h1><p>查看网口信息</p><h1>查看网卡信息</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ethtool eth0</span><br></pre></td></tr></table></figure><ul><li>网卡信息如下<br>可以看出网卡的很多信息,包括网卡速率是百兆还是千兆</li></ul><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">Settings for enp2s0:</span><br><span class="line">        Supported ports: [ TP    MII ]</span><br><span class="line">        Supported link modes:   10baseT/Half 10baseT/Full</span><br><span class="line">                                100baseT/Half 100baseT/Full</span><br><span class="line">                                1000baseT/Half 1000baseT/Full</span><br><span class="line">        Supported pause frame use: Symmetric Receive-only</span><br><span class="line">        Supports auto-negotiation: Yes</span><br><span class="line">        Supported FEC modes: Not reported</span><br><span class="line">        Advertised link modes:  10baseT/Half 10baseT/Full</span><br><span class="line">                                100baseT/Half 100baseT/Full</span><br><span class="line">                                1000baseT/Half 1000baseT/Full</span><br><span class="line">        Advertised pause frame use: Symmetric Receive-only</span><br><span class="line">        Advertised auto-negotiation: Yes</span><br><span class="line">        Advertised FEC modes: Not reported</span><br><span class="line">        Link partner advertised link modes:  10baseT/Half 10baseT/Full</span><br><span class="line">                                             100baseT/Half 100baseT/Full</span><br><span class="line">                                             1000baseT/Full</span><br><span class="line">        Link partner advertised pause frame use: Symmetric</span><br><span class="line">        Link partner advertised auto-negotiation: Yes</span><br><span class="line">        Link partner advertised FEC modes: Not reported</span><br><span class="line">        Speed: 1000Mb/s  #当前速率</span><br><span class="line">        Duplex: Full     </span><br><span class="line">        Auto-negotiation: on</span><br><span class="line">        master-slave cfg: preferred slave</span><br><span class="line">        master-slave status: slave</span><br><span class="line">        Port: Twisted Pair</span><br><span class="line">        PHYAD: 0</span><br><span class="line">        Transceiver: external</span><br><span class="line">        MDI-X: Unknown</span><br><span class="line">        Supports Wake-on: pumbg</span><br><span class="line">        Wake-on: d</span><br><span class="line">        Link detected: yes  #是否连通物理网线</span><br></pre></td></tr></table></figure><h1>把网卡指示灯打开</h1><p>在网卡支持这种功能的前提下,使用此命令会使网卡的指示灯闪烁,但需要注意,有些系统会持续闪烁,但有些版本会闪烁几秒</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ethtool -p eth0</span><br></pre></td></tr></table></figure><h1>查看网卡驱动程序信息</h1><p>查询指定的网络设备以获取相关的驱动程序信息。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ethtool -i eth0</span><br></pre></td></tr></table></figure><p>如下</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">driver: e1000</span><br><span class="line">version: 7.3.21-k8-NAPI</span><br><span class="line">firmware-version: </span><br><span class="line">expansion-rom-version: </span><br><span class="line">bus-info: 0000:02:01.0</span><br><span class="line">supports-statistics: yes</span><br><span class="line">supports-test: yes</span><br><span class="line">supports-eeprom-access: yes</span><br><span class="line">supports-register-dump: yes</span><br><span class="line">supports-priv-flags: no</span><br></pre></td></tr></table></figure><h1>列出网络接口统计信息</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ethtool -S eth0</span><br></pre></td></tr></table></figure><h1>设置网络接口速度</h1><p>eth0自适应100、1000，指定他是百兆</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ethtool -s eth0 speed 1000 duplex full autoneg off</span><br></pre></td></tr></table></figure><h1>重置网卡到自适应模式</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ethtool -r eth0</span><br></pre></td></tr></table></figure><h1>将ethtool的设置跟随网卡</h1><p>写在ifcfg-ethX配置里面</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ETHTOOL_OPTS=&quot;speed 100 deplex full autoneg off&quot;</span><br></pre></td></tr></table></figure><h1>查看错误信息</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ethtool -S eth0 | grep error</span><br></pre></td></tr></table></figure><p>同时，使用<code>ifconfig</code> 也可以看错误信息</p><h2 id="错误信息">错误信息</h2><ul><li>RX errors<br>表示总的收包的错误数量，这包括 too-long-frames 错误，Ring Buffer 溢出错误，crc 校验错误，帧同步错误，fifo overruns 以及 missed pkg 等等</li><li>RX dropped<br>表示数据包已经进入了 Ring Buffer，但是由于内存不够等系统原因，导致在拷贝到内存的过程中被丢弃</li><li>RX overruns<br>表示了 fifo 的 overruns，这是由于 Ring Buffer(aka Driver Queue) 传输的 IO 大于 kernel 能够处理的 IO 导致的，而 Ring Buffer 则是指在发起 IRQ 请求之前的那块 buffer。很明显，overruns 的增大意味着数据包没到 Ring Buffer 就被网卡物理层给丢弃了(就是ring buffer满之后先有drop收到的，再overrun没收的)，而 CPU 无法即使的处理中断是造成 Ring Buffer 满的原因之一</li><li>RX frame<br>表示 misaligned 的 frames</li></ul><h2 id="rx-crc-errors">rx_crc_errors</h2><p>在大多数情况下，增加rx_crc_errors的值意味着该问题出在网络模型的第1层，当在接口上接收到数据包时，它将经历数据完整性检查，这称为循环冗余检查。 如果数据包在该检查中失败，则将其标记为rx_crc_errors<br>1.更换电缆。<br>2.检查交换机配置。<br>3.更换网络接口卡。</p><h1>查看网卡</h1>]]></content>
     
     
-    <summary type="html">自动化脚本输入</summary>
+    <summary type="html">查看网口用的</summary>
     
     
     
@@ -111,16 +160,16 @@
   </entry>
   
   <entry>
-    <title>Linux好用命令之ethtool</title>
-    <link href="https://www.dddachui.top/posts/c0d4357c.html"/>
-    <id>https://www.dddachui.top/posts/c0d4357c.html</id>
+    <title>Linux好用命令之expect</title>
+    <link href="https://www.dddachui.top/posts/a5a7ce3.html"/>
+    <id>https://www.dddachui.top/posts/a5a7ce3.html</id>
     <published>2023-03-26T15:30:51.000Z</published>
-    <updated>2023-03-27T02:21:37.754Z</updated>
+    <updated>2023-03-26T10:40:20.644Z</updated>
     
-    <content type="html"><![CDATA[<h1>命令简介</h1><p>查看网口信息</p><h1>查看网卡信息</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ethtool eth0</span><br></pre></td></tr></table></figure><ul><li>网卡信息如下<br>可以看出网卡的很多信息,包括网卡速率是百兆还是千兆</li></ul><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">Settings for enp2s0:</span><br><span class="line">        Supported ports: [ TP    MII ]</span><br><span class="line">        Supported link modes:   10baseT/Half 10baseT/Full</span><br><span class="line">                                100baseT/Half 100baseT/Full</span><br><span class="line">                                1000baseT/Half 1000baseT/Full</span><br><span class="line">        Supported pause frame use: Symmetric Receive-only</span><br><span class="line">        Supports auto-negotiation: Yes</span><br><span class="line">        Supported FEC modes: Not reported</span><br><span class="line">        Advertised link modes:  10baseT/Half 10baseT/Full</span><br><span class="line">                                100baseT/Half 100baseT/Full</span><br><span class="line">                                1000baseT/Half 1000baseT/Full</span><br><span class="line">        Advertised pause frame use: Symmetric Receive-only</span><br><span class="line">        Advertised auto-negotiation: Yes</span><br><span class="line">        Advertised FEC modes: Not reported</span><br><span class="line">        Link partner advertised link modes:  10baseT/Half 10baseT/Full</span><br><span class="line">                                             100baseT/Half 100baseT/Full</span><br><span class="line">                                             1000baseT/Full</span><br><span class="line">        Link partner advertised pause frame use: Symmetric</span><br><span class="line">        Link partner advertised auto-negotiation: Yes</span><br><span class="line">        Link partner advertised FEC modes: Not reported</span><br><span class="line">        Speed: 1000Mb/s  #当前速率</span><br><span class="line">        Duplex: Full     </span><br><span class="line">        Auto-negotiation: on</span><br><span class="line">        master-slave cfg: preferred slave</span><br><span class="line">        master-slave status: slave</span><br><span class="line">        Port: Twisted Pair</span><br><span class="line">        PHYAD: 0</span><br><span class="line">        Transceiver: external</span><br><span class="line">        MDI-X: Unknown</span><br><span class="line">        Supports Wake-on: pumbg</span><br><span class="line">        Wake-on: d</span><br><span class="line">        Link detected: yes  #是否连通物理网线</span><br></pre></td></tr></table></figure><h1>把网卡指示灯打开</h1><p>在网卡支持这种功能的前提下,使用此命令会使网卡的指示灯闪烁,但需要注意,有些系统会持续闪烁,但有些版本会闪烁几秒</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ethtool -p eth0</span><br></pre></td></tr></table></figure><h1>查看网卡驱动程序信息</h1><p>查询指定的网络设备以获取相关的驱动程序信息。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ethtool -i eth0</span><br></pre></td></tr></table></figure><p>如下</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">driver: e1000</span><br><span class="line">version: 7.3.21-k8-NAPI</span><br><span class="line">firmware-version: </span><br><span class="line">expansion-rom-version: </span><br><span class="line">bus-info: 0000:02:01.0</span><br><span class="line">supports-statistics: yes</span><br><span class="line">supports-test: yes</span><br><span class="line">supports-eeprom-access: yes</span><br><span class="line">supports-register-dump: yes</span><br><span class="line">supports-priv-flags: no</span><br></pre></td></tr></table></figure><h1>列出网络接口统计信息</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ethtool -S eth0</span><br></pre></td></tr></table></figure><h1>设置网络接口速度</h1><p>eth0自适应100、1000，指定他是百兆</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ethtool -s eth0 speed 1000 duplex full autoneg off</span><br></pre></td></tr></table></figure><h1>重置网卡到自适应模式</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ethtool -r eth0</span><br></pre></td></tr></table></figure><h1>将ethtool的设置跟随网卡</h1><p>写在ifcfg-ethX配置里面</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ETHTOOL_OPTS=&quot;speed 100 deplex full autoneg off&quot;</span><br></pre></td></tr></table></figure><h1>查看错误信息</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ethtool -S eth0 | grep error</span><br></pre></td></tr></table></figure><p>同时，使用<code>ifconfig</code> 也可以看错误信息</p><h2 id="错误信息">错误信息</h2><ul><li>RX errors<br>表示总的收包的错误数量，这包括 too-long-frames 错误，Ring Buffer 溢出错误，crc 校验错误，帧同步错误，fifo overruns 以及 missed pkg 等等</li><li>RX dropped<br>表示数据包已经进入了 Ring Buffer，但是由于内存不够等系统原因，导致在拷贝到内存的过程中被丢弃</li><li>RX overruns<br>表示了 fifo 的 overruns，这是由于 Ring Buffer(aka Driver Queue) 传输的 IO 大于 kernel 能够处理的 IO 导致的，而 Ring Buffer 则是指在发起 IRQ 请求之前的那块 buffer。很明显，overruns 的增大意味着数据包没到 Ring Buffer 就被网卡物理层给丢弃了(就是ring buffer满之后先有drop收到的，再overrun没收的)，而 CPU 无法即使的处理中断是造成 Ring Buffer 满的原因之一</li><li>RX frame<br>表示 misaligned 的 frames</li></ul><h2 id="rx-crc-errors">rx_crc_errors</h2><p>在大多数情况下，增加rx_crc_errors的值意味着该问题出在网络模型的第1层，当在接口上接收到数据包时，它将经历数据完整性检查，这称为循环冗余检查。 如果数据包在该检查中失败，则将其标记为rx_crc_errors<br>1.更换电缆。<br>2.检查交换机配置。<br>3.更换网络接口卡。</p><h1>查看网卡</h1>]]></content>
+    <content type="html"><![CDATA[<h1>作用</h1><p>交互式自动输入</p><h1>安装</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y expect</span><br></pre></td></tr></table></figure><h1>简单示例</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cat expect.sh </span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/usr/bin/expec</span></span><br><span class="line">set timeout 20</span><br><span class="line">spawn ssh root@10.20.24.103</span><br><span class="line">expect &quot;root&quot;</span><br><span class="line">send &quot;paic1234\n&quot;</span><br><span class="line">interact</span><br></pre></td></tr></table></figure>]]></content>
     
     
-    <summary type="html">查看网口用的</summary>
+    <summary type="html">自动化脚本输入</summary>
     
     
     
@@ -410,48 +459,6 @@
     
     
     <category term="端口转发" scheme="https://www.dddachui.top/tags/%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>日志分割</title>
-    <link href="https://www.dddachui.top/posts/59127654.html"/>
-    <id>https://www.dddachui.top/posts/59127654.html</id>
-    <published>2023-03-26T10:32:31.000Z</published>
-    <updated>2023-03-26T10:43:27.836Z</updated>
-    
-    <content type="html"><![CDATA[<h1>memory日志太大了</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">3.2系统</span></span><br><span class="line">vim /etc/logrotate.d/memory</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">rotate设置小一点</span></span><br><span class="line">service crond restart</span><br></pre></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">3.3</span></span><br><span class="line">systemctl  stop   kylin-memory-monitor.service</span><br><span class="line">systemctl  disable   kylin-memory-monitor.service</span><br></pre></td></tr></table></figure><h1>创建一个日志测试logrotate</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">1.创建一个10M日志文件</span></span><br><span class="line">touch /var/log/test-log</span><br><span class="line">head -c 10M &lt; /dev/urandom &gt; /var/log/test-log</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">2.创建日志管理文件</span></span><br><span class="line">vim /etc/logrotate.d/test-log</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">内容如下</span></span><br><span class="line">/var/log/test-log &#123;</span><br><span class="line">    weekly  #每周转储</span><br><span class="line">    rotate 10 #保留10个备份，对于第11个归档，时间最久的会被删除</span><br><span class="line">    compress #gzip压缩转储的备份文件</span><br><span class="line">    delaycompress #转储的日志文件到下一次转储时才压缩</span><br><span class="line">    missingok #任何错误将被忽略,例如“文件无法找到</span><br><span class="line">    notifempty #日志为空不轮询</span><br><span class="line">    create 644 root root</span><br><span class="line">    postrotate #在所有其它指令完成后，postrotate和endscript里面指定的命令将被执行</span><br><span class="line">        /usr/bin/killall -HUP rsyslogd</span><br><span class="line">    endscript</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">3.手动运行logrotate</span></span><br><span class="line">logrotate /etc/logrotate.d/test-log</span><br><span class="line">grep &#x27;test-log&#x27; /var/lib/logrotate/logrotate.status  #查看轮训的操作</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">描述</summary>
-    
-    
-    
-    <category term="日志" scheme="https://www.dddachui.top/categories/%E6%97%A5%E5%BF%97/"/>
-    
-    
-    <category term="日志分割" scheme="https://www.dddachui.top/tags/%E6%97%A5%E5%BF%97%E5%88%86%E5%89%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>lvm分区-缩小</title>
-    <link href="https://www.dddachui.top/posts/47785311.html"/>
-    <id>https://www.dddachui.top/posts/47785311.html</id>
-    <published>2023-03-26T10:31:42.000Z</published>
-    <updated>2023-03-26T10:43:50.413Z</updated>
-    
-    <content type="html"><![CDATA[<h1>删除lv给其他分区扩容</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">查看卷组名</span></span><br><span class="line">df -h </span><br><span class="line">umount /dev/mapper/删除的卷组</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">修改fstab</span></span><br><span class="line">vim /etc/fstab  </span><br><span class="line">lvremove /dev/mapper/删除的卷组 </span><br><span class="line">lvextend -l +100%FREE /dev/mapper/扩容的卷组</span><br><span class="line">resize2fs /dev/mapper/扩容的卷组      </span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">如果不能umount</span> </span><br><span class="line">fuser -m /home/d5000/hg/var</span><br><span class="line">ps -aux | grep pid</span><br><span class="line">kill -9 pid</span><br><span class="line">fuser -mkvi /home/d5000/hg/var</span><br></pre></td></tr></table></figure><h1>缩减某个分区给其他扩容</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">umount  **** #要缩减分区的挂载点</span><br><span class="line">e2fsck -f /dev/mapper/VolGroup-LogVol02  #检查需要被缩减的</span><br><span class="line">resize2fs -p /dev/mapper/VolGroup-LogVol02 250G #减少文件系统最大到250G</span><br><span class="line">lvreduce -L 250G /dev/mapper/VolGroup-LogVol02   #缩小到250G</span><br><span class="line">vgdisplay</span><br><span class="line">lvextend -l +100%FREE /dev/mapper/VolGroup-LogVol00  #给需要扩容的分区拉升</span><br><span class="line">e2fsck -f /dev/mapper/VolGroup-LogVol00</span><br><span class="line">resize2fs /dev/mapper/VolGroup-LogVol00</span><br><span class="line">mount -a</span><br><span class="line">df -h</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html">描述</summary>
-    
-    
-    
-    <category term="磁盘管理" scheme="https://www.dddachui.top/categories/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/"/>
-    
-    
-    <category term="lvm" scheme="https://www.dddachui.top/tags/lvm/"/>
     
   </entry>
   
